@@ -83,6 +83,7 @@ def run(context):
         Write.write_gazebo_launch(package_name, robot_name, save_dir)
         Write.write_control_launch(package_name, robot_name, save_dir, joints_dict)
         Write.write_yaml(package_name, robot_name, save_dir, joints_dict)
+        Write.write_robot_launch(package_name, robot_name, save_dir, joints_dict)
         
         # copy over package files
         utils.copy_package(save_dir, package_dir)
